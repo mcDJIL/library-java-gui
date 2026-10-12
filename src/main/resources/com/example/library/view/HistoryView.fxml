@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controller.HistoryController">
+    <Label text="Riwayat Transaksi" styleClass="page-title" />
+
+    <VBox styleClass="card" VBox.vgrow="ALWAYS">
+        <TableView fx:id="historyTable" VBox.vgrow="ALWAYS" styleClass="modern-table">
+            <columns>
+                <TableColumn fx:id="colTrxId" prefWidth="120.0" text="ID TRANSAKSI" />
+                <TableColumn fx:id="colMember" prefWidth="200.0" text="NAMA PEMINJAM" />
+                <TableColumn fx:id="colBook" prefWidth="250.0" text="JUDUL BUKU" />
+                <TableColumn fx:id="colStatus" prefWidth="120.0" text="STATUS" />
+            </columns>
+            <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+        </TableView>
+    </VBox>
+</VBox>

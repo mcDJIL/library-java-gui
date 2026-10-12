@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="30.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controller.DashboardHomeController">
+
+    <VBox styleClass="welcome-banner">
+        <Label text="Selamat Datang di Librarify 👋" styleClass="welcome-title" />
+        <Label text="Kelola buku, anggota, dan transaksi perpustakaan Anda dengan lebih mudah." styleClass="welcome-subtitle" />
+    </VBox>
+
+    <Label text="Ringkasan Sistem" styleClass="page-title" />
+
+    <HBox spacing="20.0" VBox.vgrow="NEVER">
+
+        <VBox styleClass="stat-card" HBox.hgrow="ALWAYS">
+            <Label fx:id="lblTotalBooks" text="0" styleClass="stat-value" style="-fx-text-fill: #3b82f6;" />
+            <Label text="TOTAL BUKU" styleClass="stat-label" />
+        </VBox>
+
+        <VBox styleClass="stat-card" HBox.hgrow="ALWAYS">
+            <Label fx:id="lblTotalMembers" text="0" styleClass="stat-value" style="-fx-text-fill: #10b981;" />
+            <Label text="TOTAL ANGGOTA" styleClass="stat-label" />
+        </VBox>
+
+        <VBox styleClass="stat-card" HBox.hgrow="ALWAYS">
+            <Label fx:id="lblActiveTransactions" text="0" styleClass="stat-value" style="-fx-text-fill: #f59e0b;" />
+            <Label text="TRANSAKSI AKTIF" styleClass="stat-label" />
+        </VBox>
+
+        <VBox styleClass="stat-card" HBox.hgrow="ALWAYS">
+            <Label fx:id="lblTotalHistory" text="0" styleClass="stat-value" style="-fx-text-fill: #8b5cf6;" />
+            <Label text="SEMUA RIWAYAT" styleClass="stat-label" />
+        </VBox>
+
+    </HBox>
+</VBox>

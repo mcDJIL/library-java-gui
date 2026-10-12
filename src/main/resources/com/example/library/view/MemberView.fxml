@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controller.MemberController">
+    <Label text="Data Anggota" styleClass="page-title" />
+
+    <!-- Form Tambah Anggota -->
+    <HBox spacing="15.0" styleClass="card" alignment="CENTER_LEFT">
+        <TextField fx:id="txtName" promptText="Nama Lengkap Anggota" styleClass="combo-box" HBox.hgrow="ALWAYS" />
+        <Button mnemonicParsing="false" onAction="#handleAddMember" styleClass="action-btn, btn-success" text="+ Tambah Anggota" />
+    </HBox>
+
+    <VBox styleClass="card" VBox.vgrow="ALWAYS">
+        <TableView fx:id="memberTable" VBox.vgrow="ALWAYS" styleClass="modern-table">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="150.0" text="ID ANGGOTA" />
+                <TableColumn fx:id="colName" prefWidth="350.0" text="NAMA ANGGOTA" />
+                <TableColumn fx:id="colBorrowed" prefWidth="150.0" text="SEDANG DIPINJAM" />
+            </columns>
+            <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+        </TableView>
+    </VBox>
+</VBox>

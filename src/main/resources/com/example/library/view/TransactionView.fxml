@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="30.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controller.TransactionController">
+    <Label text="Manajemen Transaksi" styleClass="page-title" />
+    <HBox spacing="25.0">
+        <VBox spacing="15.0" styleClass="card" HBox.hgrow="ALWAYS">
+            <Label text="Form Peminjaman Baru" styleClass="card-title" />
+            <ComboBox fx:id="memberComboBox" promptText="Pilih Anggota" maxWidth="Infinity" styleClass="combo-box"/>
+            <ComboBox fx:id="bookComboBox" promptText="Pilih Buku" maxWidth="Infinity" styleClass="combo-box"/>
+            <Region VBox.vgrow="ALWAYS" />
+            <Button maxWidth="Infinity" onAction="#handleBorrow" styleClass="action-btn, btn-success" text="Proses Pinjaman Baru" />
+            <Label fx:id="statusLabel" wrapText="true" style="-fx-font-weight: bold;" />
+        </VBox>
+        <VBox spacing="15.0" styleClass="card" HBox.hgrow="ALWAYS">
+            <Label text="Form Pengembalian" styleClass="card-title" />
+            <ComboBox fx:id="activeTransactionComboBox" promptText="Pilih Transaksi Aktif" maxWidth="Infinity" styleClass="combo-box"/>
+            <Region VBox.vgrow="ALWAYS" />
+            <Button maxWidth="Infinity" onAction="#handleReturn" styleClass="action-btn, btn-danger" text="Selesaikan Transaksi" />
+            <Label fx:id="returnStatusLabel" wrapText="true" style="-fx-font-weight: bold;" />
+        </VBox>
+    </HBox>
+</VBox>
