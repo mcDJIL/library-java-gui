@@ -156,6 +156,4 @@ Kelompok 02
 - Moch Djauharil Ilmi (3125600063)
 - Lulu'atul Mahfudoh (3125600075)
 - Erlandio Bahy Atmajaya (3125600085)
-- Nama kelompok: (isi di sini)
-- Anggota: (isi nama & NRP anggota di sini)
 - Mata kuliah: Pemrograman Berorientasi Objek, D4 Teknik Informatika, PENS
